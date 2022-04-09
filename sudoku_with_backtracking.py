@@ -2,7 +2,7 @@
 
 class Sudoku:
 
-    empy_space = 0
+    empty_space = 0
     
     def __init__(self):
 
@@ -38,7 +38,7 @@ class Sudoku:
     def find_empty_space(self):
         for i in range(9):
             for j in range(9):
-                if self.board[i][j] == Sudoku.empy_space:
+                if self.board[i][j] == Sudoku.empty_space:
                     return [i,j]
         
         return None
